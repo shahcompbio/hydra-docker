@@ -1,0 +1,10 @@
+version: "3"
+services:
+  graphql:
+    container_name: graphql
+    image: shahcompbio/spectrum-cohort-event-graphql
+  frontend:
+    container_name: frontend
+    image: shahcompbio/spectrum-cohort-event-react
+    ports:
+      - "80:80"
