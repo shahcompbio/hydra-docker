@@ -1,10 +1,12 @@
 version: "3"
 services:
   graphql:
-    container_name: graphql
-    image: shahcompbio/spectrum-cohort-event-graphql
+    container_name: hydra-graphql
+    image: shahcompbio/hydra-graphql
+    volumes:
+      - ./.env:./.env
   frontend:
-    container_name: frontend
-    image: shahcompbio/spectrum-cohort-event-react
+    container_name: hydra-frontend
+    image: shahcompbio/hydra-react
     ports:
-      - "80:80"
+      - "5005:80"
