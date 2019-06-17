@@ -4,7 +4,7 @@ services:
     container_name: hydra-graphql
     image: shahcompbio/hydra-graphql
     volumes:
-      - ./.env:./.env
+      - ./.env:/.env
   frontend:
     container_name: hydra-frontend
     image: shahcompbio/hydra-react
