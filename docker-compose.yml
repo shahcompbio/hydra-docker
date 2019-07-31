@@ -5,6 +5,7 @@ services:
     image: shahcompbio/hydra-graphql
     volumes:
       - ./.env:/root/.env
+      - ./data.xls:/root/lib/utils/s.xls
   frontend:
     container_name: hydra-frontend
     image: shahcompbio/hydra-react
